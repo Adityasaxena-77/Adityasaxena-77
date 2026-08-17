@@ -185,7 +185,7 @@ Real-time trading simulation using WebSocket market data.
     alt="GitHub Contribution Snake"
   />
 </p>
-> ⚠️ The snake animation requires a GitHub Actions workflow in this repository. Setup is provided below.
+> 
 
 ---
 
