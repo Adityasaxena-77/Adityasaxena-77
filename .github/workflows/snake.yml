@@ -5,11 +5,11 @@ on:
     - cron: "0 0 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   generate:
-    permissions:
-      contents: write
-
     runs-on: ubuntu-latest
 
     steps:
@@ -23,7 +23,23 @@ jobs:
           outputs: |
             output/github-contribution-grid-snake.svg
 
-      - name: Push snake animation
+      - name: Add black background
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          file = Path("output/github-contribution-grid-snake.svg")
+          svg = file.read_text()
+
+          svg = svg.replace(
+              "<svg ",
+              '<svg style="background-color:#000000" '
+          )
+
+          file.write_text(svg)
+          PY
+
+      - name: Commit and push snake
         uses: EndBug/add-and-commit@v9
         with:
           message: "chore: update contribution snake"
