@@ -180,9 +180,11 @@ Real-time trading simulation using WebSocket market data.
 # 🐍 Contribution Graph
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Adityasaxena-77/Adityasaxena-77/output/github-contribution-grid-snake.svg" alt="GitHub Contribution Snake"/>
+  <img
+    src="https://raw.githubusercontent.com/Adityasaxena-77/Adityasaxena-77/main/output/github-contribution-grid-snake.svg"
+    alt="GitHub Contribution Snake"
+  />
 </p>
-
 > ⚠️ The snake animation requires a GitHub Actions workflow in this repository. Setup is provided below.
 
 ---
