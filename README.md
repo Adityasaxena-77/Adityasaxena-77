@@ -185,7 +185,7 @@ Real-time trading simulation using WebSocket market data.
     alt="GitHub Contribution Snake"
   />
 </p>
-> 
+
 
 ---
 
